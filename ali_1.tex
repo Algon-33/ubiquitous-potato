@@ -1,13 +1,11 @@
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{geometry}
-\usepackage[]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
-\titleformat{\section}
-  {\Large\bfseries}  % Format
-  {}{0em}           % Label
-  {}                % Separator
-  [\vspace{-0.5em}] % After-code
+\usepackage{enumitem}
 
+% Document formatting
 \geometry{
     a4paper,
     total={170mm,257mm},
@@ -15,40 +13,75 @@
     top=20mm,
 }
 
+% Section formatting
+\titleformat{\section}
+    {\Large\bfseries}
+    {}{0em}
+    {}
+    [\vspace{-0.5em}]
+
+% Adjust spacing
+\setlength{\parskip}{6pt}
+\setlength{\itemsep}{3pt}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=blue,
+}
+
 \begin{document}
 
-\vspace*{-40pt}  % Reduces space at top of page
+\vspace*{-40pt}
 \begin{center}
-    \huge\textbf{Algon}\\[3pt]  % [3pt] adds a bit of controlled spacing
-    \small Algon33.ar@gmail.com
+\huge\textbf{Algon}\\[3pt]
+\small Algon33.ar@gmail.com
 \end{center}
-\vspace{10pt}  % Add some space before first section
 
+\vspace{6pt}
 
-\textbf{MPhys. Physics with Theoretical Physics}, University of Manchester\\
-Thesis: ``The Polaron Transform Applied to a Landau-Zener Transition'' 
+\section*{Education}
+\textbf{MPhys. Physics with Theoretical Physics, First Class}, University of Manchester\\
+Thesis: ``The Polaron Transform Applied to a Landau-Zener Transition''
 
-\section*{Experience/Projects}
-\vspace{10pt}  % Add some space before first section
+\section*{Experience}
 \textbf{AI Evaluation Specialist}, Equistamp.com
-\begin{itemize}
-    \item Finding and augmenting high-quality AI capability evaluations
+\begin{itemize}[leftmargin=*]
+\item Developed and implemented evaluation frameworks for assessing AI capabilities across diverse models and architectures
+\item Created automation scripts to standardize and integrate evaluations into the company's database system
+\item Contributed to the development of novel alignment evaluations while enhancing existing evaluations
+\item Conducted comprehensive analysis of AI research papers and codebases to identify and adapt high-quality evaluation methods
 \end{itemize}
 
-\textbf{Stampy/AIsafety.info Distillation Fellow and Project Lead}
-\begin{itemize}
-    \item Initially, I wrote intro materials for AI safety, and then shifted to leading the Stampy project. 
-    \item Examples of articles I have helped to write include \href{https://aisafety.info/questions/8OGF/What-is-the-"natural-abstraction-hypothesis"}{What is the "natural abstraction hypothesis"?}  and \href{https://aisafety.info/questions/8EL9/What-is-AI-alignment}{What is AI alignment?}
-    \item As project lead, I've had to change stampy's culture to prioritize one thing at a time, and focus on creating content that address people's needs. This meant doing things like: creating a new intro section designed for laymen, positioning the site better, trying out new mediums etc. 
 
+
+\textbf{Distillation Fellow and Project Lead}, AIsafety.info
+\begin{itemize}[leftmargin=*]
+\item Authored articles on AI safety concepts, including Natural Abstraction Hypothesis and AI alignment fundamentals
+\item Led project transformation to improve focus on feedback and organizational culture
+\item Implemented creation of new content section for people first encountering AI safety. 
 \end{itemize}
 
 \textbf{Short term contracts}
-\begin{itemize}
-    \item ``Ambitious Methods in Education''. A report for the Atlas Fellowship on methods in education greatly surpassing those in common use along one of four axis: generality, effectiveness, cost and scalability.   
-    \item ``Detecting Strategic Reasoning in AI Systems''. A report on ways to determine to what extent near-term AI systems possess the bundle of skills Bostrom calls the "Strategic superpower".   
-    \item Automated Metaculus Predictions: A bot I wrote for a superforecaster who wanted easy Metaculus points winnable by simply copying the aggregate community probability distributions on all questions on Metaculus.  
+\begin{itemize}[leftmargin=*]
+\item Authored ``Ambitious Methods in Education'' report for Atlas Fellowship, analyzing educational methodologies surpassing common practices in generality, effectiveness, cost, and scalability
+\item Conducted research on ``Detecting Strategic Reasoning in AI Systems,'' examining methods to evaluate strategic capabilities in near-term AI systems
+\item Developed automated Metaculus forecasting system for a superforecaster.
 \end{itemize}
 
+\section*{Community Involvement}
+\textbf{AI Safety Reading Group}
+\begin{itemize}[leftmargin=*]
+\item Long-term participant in Soren Elverlin's AI Safety reading group.
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Programming:} Python, Mathematica, Typescript\\
+\textbf{Machine Learning:} Deep Learning, Classical Machine Learning, Evals\\
+\textbf{Theoretical:} Statistical Mechanics, AI Alignment Theory\\
+\textbf{Other:} Technical Writing, Forecasting
 
 \end{document}
+
